@@ -1,0 +1,50 @@
+voxmm_dir: ./VoxMM
+file_list_paths: [./VoxMM/split/test.txt, ./VoxMM/split/train.txt]
+output_dir: ./VoxMM_preprocessed/A-ASR
+
+# segment_selector
+min_duration: 1
+max_duration: 30
+background_noise_list: []
+no_singing: True
+no_overlap: True
+
+only_on_screen: False
+no_partially_on_screen: False
+no_multiple_on_screen: False
+
+script_filter: True
+min_word: 2
+max_word: 80
+count_interjection_as_word: True
+count_uncertain_as_word: False
+count_diffluency_as_word: False
+no_inaudible: True
+no_uncertain: True
+no_interjection: False
+no_diffluency: True
+
+# asr preprocessor
+num_worker: 32
+segment_list_paths: [./VoxMM_preprocessed/A-ASR/segment_list/test.txt, ./VoxMM_preprocessed/A-ASR/segment_list/train.txt]
+dataset_style: librispeech
+use_vid_index: True
+
+no_script: False
+capitalize: True
+apostrophe: True
+hypen: False
+space_on_abbreviation: False
+numeric_format: pronunciation
+default_inaudible_process: drop
+default_uncertain_process: word
+default_diffluency_process: drop
+default_interjection_process: word
+interjection_to_word: []
+interjection_to_token: []
+interjection_to_drop: [erm, uh-huh, uh-uh, hehe, haha, shh, aww, argh, hahaha, woo-hoo, brr, eww, uh-oh, waah, hehehe, oww, pff, skrr, nuh-uh, mm-mm, ooh-la-la]
+
+no_wav: False
+sample_rate: 16000
+volume: -16
+

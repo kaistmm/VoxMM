@@ -1,0 +1,22 @@
+voxmm_dir: ./VoxMM
+file_list_paths: [./VoxMM/split/test.txt, ./VoxMM/split/train.txt]
+output_dir: ./VoxMM_preprocessed/AV-Diar
+
+# segment selector
+min_duration: 0
+max_duration: 100
+background_noise_list: []
+no_singing: True
+no_overlap: False
+
+only_on_screen: False
+no_partially_on_screen: False
+no_multiple_on_screen: False
+
+script_filter: False
+
+# diarisation_preprocessor
+segment_list_paths: [./VoxMM_preprocessed/AV-Diar/segment_list/test.txt, ./VoxMM_preprocessed/AV-Diar/segment_list/train.txt]
+no_track: False
+no_rttm: False
+no_lab: False

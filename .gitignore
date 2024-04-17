@@ -1,0 +1,6 @@
+VoxMM/
+VoxMM_preprocessed/
+VoxMM
+VoxMM_preprocessed
+**/__pycache__
+__pycache/*
