@@ -75,3 +75,7 @@ The VoxMM dataset is available to download for research purposes under a [Creati
 In order to collect videos that simulate in-the-wild scenarios from as many diverse domains as possible, the dataset includes sensitive content such as political debates and news. The views and opinions expressed by the speakers in the dataset are those of the individual speakers and do not necessarily reflect the positions of the Korea Advanced Institute of Science and Technology (KAIST) or the authors of the paper
 
 We would also like to note that the distribution of identities in this dataset may not be representative the global human population. Please be careful of unintended societal, gender, racial, linguistic and other biases when training or deploying models trained on this data.
+
+### Acknowledgement
+This work was supported by Institute of Information \& communications Technology Planning \& Evaluation (IITP) grant funded by the Korea government (MSIT, 2022-0-00989).
+
