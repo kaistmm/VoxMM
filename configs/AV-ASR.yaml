@@ -50,4 +50,4 @@ volume: -16
 
 no_video: False
 track_size: 224
-track_framerate: 20
+track_framerate: 25
