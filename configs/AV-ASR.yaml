@@ -1,3 +1,5 @@
+# config file used for making LRS-VoxMM dataset
+# additional manual filtering is needed to produce the final LRS-VoxMM dataset, which is described in the paper
 voxmm_dir: ./VoxMM
 file_list_paths: [./VoxMM/split/test.txt, ./VoxMM/split/train.txt]
 output_dir: ./VoxMM_preprocessed/AV-ASR
@@ -16,7 +18,7 @@ no_multiple_on_screen: True
 script_filter: True
 min_word: 2
 max_word: 80
-count_interjection_as_word: True
+count_interjection_as_word: False
 count_uncertain_as_word: False
 count_diffluency_as_word: False
 no_inaudible: True
@@ -39,10 +41,10 @@ numeric_format: pronunciation
 default_inaudible_process: drop
 default_uncertain_process: word
 default_diffluency_process: drop
-default_interjection_process: word
-interjection_to_word: []
+default_interjection_process: drop
+interjection_to_word: ['yeah','oh','aha','wow','boom','whoa','hmm','huh','bam','ooh']
 interjection_to_token: []
-interjection_to_drop: [erm, uh-huh, uh-uh, hehe, haha, shh, aww, argh, hahaha, woo-hoo, brr, eww, uh-oh, waah, hehehe, oww, pff, skrr, nuh-uh, mm-mm, ooh-la-la]
+interjection_to_drop: []
 
 no_wav: False
 sample_rate: 16000
