@@ -34,6 +34,7 @@ python ./tools/diarisation_preprocessor.py --config='./configs/A-Diar.yaml'
 
 #### Audio-visual ASR
 Use the following commands to create an LRS3-style dataset.  
+For LRS-VoxMM, additional manual filtering and refinement was performed after this automatic process.
 ```
 python ./tools/segment_selector.py --config='./configs/AV-ASR.yaml'
 python ./tools/asr_preprocessor.py --config='./configs/AV-ASR.yaml'
