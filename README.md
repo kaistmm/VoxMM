@@ -59,11 +59,20 @@ python ./tools/diarisation_preprocessor.py --config='./configs/AV-Diar.yaml'
 Please cite the following if you make use of the dataset.
 
 ```
-@article{kwak2024voxmm,
-title={VoxMM: Rich transcription of conversations in the wild},
-author={Kwak, Doyeop and Jung, Jaemin and Nam, Kihyun and Jang, Youngjoon and Jung, Jee-won and Watanebe, Shinji and Chung, Joon Son},
-booktitle={International Conference on Acoustics, Speech, and Signal Processing},
-year={2024}
+@inproceedings{kwak2024voxmm,
+  title={Voxmm: Rich transcription of conversations in the wild},
+  author={Kwak, Doyeop and Jung, Jaemin and Nam, Kihyun and Jang, Youngjoon and Jung, Jee-Weon and Watanabe, Shinji and Chung, Joon Son},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={12551--12555},
+  year={2024}
+}
+```
+```
+@article{kwak2026lrs,
+  title={LRS-VoxMM: A benchmark for in-the-wild audio-visual speech recognition},
+  author={Kwak, Doyeop and Choi, Jeongsoo and Lee, Suyeon and Chung, Joon Son},
+  journal={arXiv preprint arXiv:2604.27866},
+  year={2026}
 }
 ```
 
