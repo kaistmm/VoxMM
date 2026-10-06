@@ -48,6 +48,7 @@ python ./tools/diarisation_preprocessor.py --config='./configs/AV-Diar.yaml'
 ```
 
 ### Metadata Version Log
+**v1.1.0** Updated face tracks with LRS-style bounding boxes, as used for constructing LRS-VoxMM. The v1.0.0 face tracks remain available; all other metadata remains at v1.0.0.
 
 **v1.0.0:** Initial release with the same videos as v0.0.0 but minor changes in the split. Improved label quality through additional manual refinement. Interjections and disfluencies are now distinguished in the script labels. Metadata structure revised  for enhanced usability. Some attributes removed to address privacy concerns.
 
